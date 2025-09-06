@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigational Tips - Palayan Road Hazard Map</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: #f5f2e9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .auth-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(gabayT.jpg) no-repeat center center fixed;
+        background-size: cover;
+        padding: 20px;
+      }
+
+      .auth-card {
+        background-color: rgba(235, 208, 162, 0.95);
+        padding: 2.5rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(139, 44, 42, 0.3);
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        border: 2px solid #8b2c2a;
+      }
+
+      .auth-card h2 {
+        text-align: center;
+        color: #8b2c2a;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+        border-bottom: 2px solid rgba(139, 44, 42, 0.3);
+        padding-bottom: 15px;
+      }
+
+      .auth-card p {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .tips-container {
+        margin: 20px 0;
+      }
+
+      .tip-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .tip-icon {
+        background: #8b2c2a;
+        color: #ebd0a2;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+
+      .tip-content h3 {
+        color: #8b2c2a;
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+      }
+
+      .btn-primary {
+        display: inline-block;
+        background: #8b2c2a;
+        color: #ebd0a2;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: all 0.3s;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 3px 10px rgba(139, 44, 42, 0.3);
+      }
+
+      .btn-primary:hover {
+        background: #6b2120;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(139, 44, 42, 0.4);
+      }
+
+      .btn-primary i {
+        margin-left: 8px;
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .logo h1 {
+        color: #8b2c2a;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .logo i {
+        font-size: 2.8rem;
+      }
+
+      @media (max-width: 768px) {
+        .auth-card {
+          padding: 1.5rem 1.2rem;
+        }
+
+        .auth-card h2 {
+          font-size: 1.8rem;
+        }
+
+        .auth-card p {
+          font-size: 1rem;
+        }
+
+        .tip-item {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .tip-icon {
+          margin-right: 0;
+          margin-bottom: 10px;
+          align-self: center;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .auth-card {
+          padding: 1.2rem 1rem;
+          max-width: 95vw;
+        }
+
+        .logo h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="logo">
+          <h1><i class="fas fa-map-marked-alt"></i> Palayan Road Hazard Map</h1>
+        </div>
+
+        <h2>Navigational Tips</h2>
+
+        <p>
+          Welcome to the Palayan Road Hazard Mapping System. Before you explore
+          the map, here are some important tips to help you navigate and
+          understand the hazard information:
+        </p>
+
+        <div class="tips-container">
+          <div class="tip-item">
+            <div class="tip-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Understanding Hazard Markers</h3>
+              <p>
+                Different colored markers represent different types of hazards.
+                Red indicates fire hazards, blue shows flood risks, and orange
+                marks structural issues.
+              </p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Search Functionality</h3>
+              <p>
+                Use the search bar to find specific locations or hazards. You
+                can search by address, hazard type, or keyword.
+              </p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-icon">
+              <i class="fas fa-filter"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Filtering Hazards</h3>
+              <p>
+                Use the category filters in the sidebar to show only specific
+                types of hazards. This helps you focus on the risks most
+                relevant to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-icon">
+              <i class="fas fa-street-view"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Street View Details</h3>
+              <p>
+                Click on any hazard marker and then select "View Street Details"
+                to see images and more information about specific locations.
+              </p>
+            </div>
+          </div>
+
+          <div class="tip-item">
+            <div class="tip-icon">
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Reporting Hazards</h3>
+              <p>
+                If you discover a new hazard, use the report button to notify
+                authorities and help keep your community safe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p style="text-align: center; font-weight: 600; color: #8b2c2a">
+          Stay safe and be aware of your surroundings when navigating hazardous
+          areas.
+        </p>
+
+        <div style="text-align: center">
+          <a href="v2.html" class="btn-primary">
+            Continue to Hazard Map <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
